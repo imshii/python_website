@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='ico/L-High-Res.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+    <h1>
+        Welcome to imshy's stock scraper!
+    </h1>
+</head>
+<body>
+    {% block content %}
+        {{content}}
+    {% endblock %}
+
+    <form method="POST">
+        <input name="variable">
+        <input type="submit">
+    </form>
+
+    <a href="https://raw.githubusercontent.com/imshii/stock_data/main/stock%20data.txt">Click here for a list of all stocks</a>
+</body>
+</html>

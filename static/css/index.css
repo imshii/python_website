@@ -1,0 +1,33 @@
+body {
+
+    background-image: url("/static/background/cpu-min.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: burlywood;
+
+}
+input[type = text]{
+
+    padding: 10px 10px;
+    background: transparent;
+    color: blue;
+    border-radius: 4px;
+}
+input[type = submit]{
+
+    padding: 10px 10px;
+    background: transparent;
+    outline: rgba(92, 72, 72, 0.877);
+    color: rgba(211, 0, 18, 0.486);
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 12px;
+
+
+}
+input[type = submit]:hover{
+
+    background: rgb(51, 51, 51);
+}

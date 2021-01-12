@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"/>
+    <link rel = "stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imshy's Webhook</title>
+    <style>
+      body  {
+          background-image: url("/static/background/background.png");
+          }
+  </style>
+  </head>
+  <header>
+      <h1>
+        <a href="https://discord.gg/BhfcJ9M">imshy's webhook page</a>
+      </h1>
+  </header>
+  <body>
+    <br>
+    <input type="text" id="avatar" placeholder="profile pic">
+    <input type="text" id="userInput" placeholder="message">
+    <input type="text" id="inputUserName" placeholder="username">
+    <!--<input type="text" id="picture" placeholder="picture">-->
+    <br>
+   <!--<button type="submit" onclick="picture1()"> Picture </button>-->
+    <button type="submit" onclick="scraper()">Message</button>
+  <!--<button type="submit" onclick="spamBot()">Spammer</button>-->
+  </body>
+</html>
